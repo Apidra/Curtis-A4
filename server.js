@@ -119,7 +119,7 @@ function stats(req, res)
         if (err) 
           writeResult(res, {'error' : err});
         else 
-          writeResult(res, {'result' : result});
+          writeResult(res, {'result' : result[0]});
       });
     }
   });
